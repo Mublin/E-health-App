@@ -1,0 +1,29 @@
+.card{
+    height: 205px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-primary);
+}
+
+.cta-cards .action{
+    background-color: var(--color-action);
+}
+.card h2, .card p {
+    color: white;
+}
+.cta-cards .first{
+    padding: 1rem;
+    text-align: left;
+}
+.first .h2, .first p{
+    padding-left: 6rem;
+}
+.cta-cards .last{
+    padding: 1rem;
+    text-align: left;
+}
+.cta-cards .action{
+    padding: 1rem;
+    text-align: center;
+}

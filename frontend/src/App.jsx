@@ -1,33 +1,54 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { Link, Routes, Route } from 'react-router-dom'
+import Landpage from './pages/Landpage'
+import { ContextProvider, initialState } from './context/useContext'
+import LoginPage from './pages/LoginPage'
+import RegisterPage from './pages/RegisterPage'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <ContextProvider userDetails={initialState.userDetails} >
+      <div className="health">
+        <nav className="head-container">
+          <div className="head-details">
+            <div className="up">
+              <div className="socials">
+                <p>insta</p>
+                <p>insta</p>
+                <p>insta</p>
+              </div>
+              <div className="contacts">
+                <p><a href="tel:+2348141312442">Phone: +2348141312441</a></p>
+                <p><a href="mailto:mublin99@gmail.com">Email: mublin99@gmail.com</a></p>
+              </div>
+            </div>
+          <div className="down">
+              <div className="logo">
+                <p>Buk</p>
+              </div>
+              <div className="nav-items">
+                <Link className='link-items' to={'/'}>Home</Link>
+                <Link className='link-items'to={'/contact'}>Emergency</Link>
+                <Link className='link-items'to={'/about'}>About</Link>
+                <Link className='link-items'to={'/contact'}>Contact</Link>
+                <Link className='link-items'to={'/login'}>Log-in/Sign-up</Link>
+              </div>
+              <div className="nav-action">
+                <button>action</button>
+              </div>
+            </div>
+            </div>
+        </nav>
+        <Routes>
+          <Route path='/' element={<Landpage />}/>
+          <Route path='/login' element={<LoginPage />}/>
+          <Route path='/register'   element={<RegisterPage />}/>
+        </Routes>
+        
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      </ContextProvider>
     </>
   )
 }
