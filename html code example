@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University E-health Clinic</title>
+  <link rel="stylesheet" href="e health.css">
+  <style>
+    /* Custom styles */
+    /* Reset default margin and padding */
+    body, h1, h2, p, ul, li {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Basic styling */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #007bff;
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; /* Align items vertically */
+    }
+
+    .logo {
+      flex: 0 0 auto;
+    }
+
+    .logo img {
+      height: 50px; /* Adjust height as needed */
+    }
+
+    nav ul {
+      list-style-type: none;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    footer {
+      background-color: #f8f9fa;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="pictures/logo.jpg" alt="University E-health Clinic Logo">
+    </div>
+    <h1>University E-health Clinic</h1>
+    <nav>
+      <ul>
+        <li><a href="#doctors">Find a Doctor</a></li>
+        <li><a href="#ambulance">Request Ambulance</a></li>
+        <li><a href="#about">About Us</a></li>
+      </ul>
+    </nav>
+    <div class="buttons">
+      <button class="login-btn">Login</button>
+      <button class="signup-btn">Sign Up</button>
+      <button class="search-btn"><img src="pictures/searc_icon.png" alt="Search Icon"></button>
+    </div>
+  </header>
+  <main>
+    <section id="welcome">
+      <h2>Welcome to Our University E-health Clinic</h2>
+  <p>At our clinic, we are dedicated to providing timely and reliable healthcare services to all students, <br>
+     faculty, and staff of the university community.</p>
+  <p>Whether you need to find a doctor for a consultation, <br>
+    request ambulance services in case of an emergency, or learn more about our clinic, you've come to the right place.</p>
+  <p>We prioritize your health and well-being and strive <br>
+     to make accessing healthcare as convenient and efficient as possible.</p>
+  <!-- Add any additional information or call-to-action here -->
+      
+    </section>
+
+    <section id="departments">
+      <h2>Our Departments</h2>
+      <div class="department-slider">
+        <div class="slide">
+          <img src="pictures/dentist-department.jpg" alt="Dentist Department">
+          <p>Department 1</p>
+        </div>
+        <div class="slide">
+          <img src="pictures/emergency-department.jpg" alt="Emergency Department">
+          <p>Department 2</p>
+        </div>
+        
+          <div class="slide">
+            <img src="pictures/department pic1.jpg" alt="Department 4">
+            <p>Department 4</p>
+          </div>
+          <div class="slide">
+            <img src="pictures/department pic2.jpg" alt="Department 5">
+            <p>Department 5</p>
+          </div>
+          <div class="slide">
+            <img src="pictures/department pic3.jpg" alt="Department 6">
+            <p>Department 6</p>
+            
+
+
+        </div>
+        <!-- Add more slides as needed -->
+      </div>
+    </section>
+    <section id="doctors">
+      <h2>Find a Doctor</h2>
+      <p>Connect with available doctors for quick consultations.</p>
+      <!-- Add doctor search functionality here -->
+    </section>
+    <section id="ambulance">
+      <h2>Request Ambulance</h2>
+      <p>In case of emergency, request ambulance services.</p>
+      <!-- Add ambulance request form here -->
+    </section>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>We aim to provide timely healthcare services to our university community.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 University E-health Clinic</p>
+  </footer>
+  <script src="script.js"></script>
+
+</body>
+</html>
